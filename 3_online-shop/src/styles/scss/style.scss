@@ -1,0 +1,69 @@
+@import "./mixins";
+
+// Podklyuchenie shrifti
+
+// -- Podklyuchenie shrifti
+
+// Shrift po umaolchnie
+$fontfamily: "Inter", sans-serif;
+$color1: #151515;
+$color2: #9092a3;
+$color3: #e30a17;
+$color4: #eb5339;
+$color5: #31c87f;
+// $fontfamily: 'Exo 2', sans-serif;
+// -- Shrift po umaolchnie
+
+// Peremennie
+$minwidth: 320px;
+$mw: 1175;
+$md1: $mw + 12;
+$md2: 992.98;
+$md3: 767.98;
+$md4: 575.98;
+$md5: 479.98;
+// -- Peremennie
+
+// Osnovaya setka
+._container {
+  max-width: $mw + px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+  @media (max-width: ($md1+px)) {
+    max-width: 1050px;
+  }
+  @media (max-width: ($md2+px)) {
+    max-width: 960px;
+  }
+  @media (max-width: ($md3+px)) {
+    // max-width: 720px;
+    // padding: 0 15px;
+  }
+}
+//-- Osnovaya setka
+// Obolochka
+.wrapper {
+  width: 100%;
+  // overflow: hidden;
+  @include flexbox();
+  flex-direction: column;
+  height: 100%;
+  // &.loaded{}
+}
+//-- Obolochka
+
+// Podklyucheni UI stiley
+@import "./ui";
+@import "./forms";
+//-- Podklyucheni UI stiley
+
+// ==================================================================================================================
+
+
+// Podklyuchenie faylov
+// @import "header.scss";
+// @import "footer.scss";
+//-- Podklyuchenie faylov
+
+/* ================================================================================================================ */
