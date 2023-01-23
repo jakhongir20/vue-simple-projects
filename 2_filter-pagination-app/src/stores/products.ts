@@ -10,7 +10,7 @@ export const useProductStore = defineStore('products', {
     actions: {
         async fetchProductsList() {
             setTimeout(async () => {
-                const response = await fetch("../../../db.json");
+                const response = await fetch("../db.json");
                 const {data} = await response.json();
                 this.products = data;
             }, 1500)
