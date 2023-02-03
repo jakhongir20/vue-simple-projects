@@ -9,7 +9,7 @@
 - требуется для запустить приложение npm install и npm run dev
 
 3. ONLINE-SHOP (REST CRUD Operation):
-- разработано через Vue 3, jQuery, UI Native SCSS/CSS
+- разработано через Vue 3, jQuery, UI Native SCSS/CSS (верстку сам сделал раньше где-то 2019 году)
 - для продуктов разработано Backend (Techs: NodeJS, ExpressJS, MongoDB, Mongoose) CRUD записана
 - требуется для запустить приложение npm install, npm run dev и для подключить база-данных nodemon .\src\server\index.js
 
