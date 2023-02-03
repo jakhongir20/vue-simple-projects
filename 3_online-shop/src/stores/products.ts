@@ -15,8 +15,6 @@ export const useProductStore = defineStore('products', {
                 this.loading = true;
                 const {data} = await axios('/api/product/admin/products');
                 this.products = data;
-                const response = await fetch('https://fakestoreapi.com/products');
-                const dt = await response.json();
             } catch (err) {
                 console.error('Error: ', err)
             } finally {
